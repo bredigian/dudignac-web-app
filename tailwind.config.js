@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       width: {
         logo: "3.5rem",
+        "logo-xl": "8rem",
         tab: "75%",
         tabIcon: "4rem",
         card: "calc(100% - 2rem)",

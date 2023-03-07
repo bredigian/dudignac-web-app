@@ -40,8 +40,8 @@ const MatchItem = ({ data, details }) => {
           <div className="flex flex-col items-start">
             {data.team1.details.map((detail) => (
               <div key={detail.id} className="flex items-center gap-2">
-                <IoFootball />
-                <p className="text-xs w-description">
+                <IoFootball className="text-xs" />
+                <p className="text-xs">
                   {detail.player} {detail.time}
                 </p>
               </div>
@@ -50,8 +50,8 @@ const MatchItem = ({ data, details }) => {
           <div className="flex flex-col items-end">
             {data.team2.details.map((detail) => (
               <div key={detail.id} className="flex items-center gap-2">
-                <IoFootball />
-                <p className="text-xs w-description">
+                <IoFootball className="text-xs" />
+                <p className="text-xs">
                   {detail.player} {detail.time}
                 </p>
               </div>
