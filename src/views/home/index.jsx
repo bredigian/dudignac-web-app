@@ -24,7 +24,7 @@ const Home = () => {
     day: "Fecha 1",
   }
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 my-10 min-h-screen">
       <NewsItem news={lastNews} />
       <MatchItem data={lastMatch} />
       <Table />

@@ -9,6 +9,7 @@ module.exports = {
         tabIcon: "4rem",
         card: "calc(100% - 2rem)",
         container: "100%",
+        description: "80%",
       },
       height: {
         header: "4rem",
