@@ -11,7 +11,7 @@ const TabNavigator = () => {
     setActive(label)
   }
   return (
-    <div className="sticky bottom-0 mx-auto w-tab p-4">
+    <div className="sticky bottom-3 mx-auto w-tab p-2 rounded-tab bg-black backdrop-blur-sm">
       <ul className="flex items-center justify-between">
         <TabNavigatorItem
           icon={<SlHome />}

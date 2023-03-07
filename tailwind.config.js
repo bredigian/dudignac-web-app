@@ -24,6 +24,7 @@ module.exports = {
       primary: "#f52812",
       secondary: "#ffffff",
       red: "#f52812",
+      black: "#00000035",
     },
     textColor: {
       primary: "#000000",
@@ -50,10 +51,14 @@ module.exports = {
     borderRadius: {
       none: "0",
       base: "1rem",
+      tab: "3rem",
       mid: "50%",
     },
     boxShadowColor: {
       primary: "#f52812",
+    },
+    backdropBlur: {
+      sm: "2px",
     },
   },
   plugins: [],
