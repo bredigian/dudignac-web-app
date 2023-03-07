@@ -1,3 +1,6 @@
 export { default as Header } from "./header/index"
 export { default as TabNavigator } from "./tab-navigator/index"
 export { default as NewsItem } from "./news-item/index"
+export { default as CardItem } from "./card-item/index"
+export { default as MatchItem } from "./match-item/index"
+export { default as Table } from "./table/index"

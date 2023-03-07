@@ -13,9 +13,9 @@ const App = () => {
     <RouterNavigator>
       <Header />
       <Routes>
-        <Route exact path="/" component={<Home />} />
-        <Route exact path="/matches" component={<Matches />} />
-        <Route exact path="/about" component={<About />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/matches" element={<Matches />} />
+        <Route exact path="/about" element={<About />} />
       </Routes>
       <TabNavigator />
     </RouterNavigator>

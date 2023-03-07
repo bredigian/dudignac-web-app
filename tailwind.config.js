@@ -7,11 +7,14 @@ module.exports = {
         logo: "3.5rem",
         tab: "75%",
         tabIcon: "4rem",
+        card: "calc(100% - 2rem)",
+        container: "100%",
       },
       height: {
         header: "4rem",
         view: "calc(100vh - 4rem)",
         tabIcon: "4rem",
+        card: "calc(100% - 2rem)",
       },
     },
     borderColor: {
@@ -46,7 +49,11 @@ module.exports = {
     },
     borderRadius: {
       none: "0",
+      base: "1rem",
       mid: "50%",
+    },
+    boxShadowColor: {
+      primary: "#f52812",
     },
   },
   plugins: [],

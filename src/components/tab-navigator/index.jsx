@@ -1,30 +1,38 @@
+import React, { useState } from "react"
+
 import { BiInfoCircle } from "react-icons/bi"
 import { IoFootballOutline } from "react-icons/io5"
-import React from "react"
 import { SlHome } from "react-icons/sl"
 import TabNavigatorItem from "../tab-navigator-item/index"
 
-const TabNavigator = ({ active }) => {
+const TabNavigator = () => {
+  const [active, setActive] = useState("Home")
+  const handleActive = (label) => {
+    setActive(label)
+  }
   return (
     <div className="sticky bottom-0 mx-auto w-tab p-4">
       <ul className="flex items-center justify-between">
         <TabNavigatorItem
-          active={active}
           icon={<SlHome />}
           label="Home"
           route="/"
+          active={active === "Home"}
+          handleActive={handleActive}
         />
         <TabNavigatorItem
-          active={false}
           icon={<IoFootballOutline />}
           label="Matches"
           route="/matches"
+          active={active === "Matches"}
+          handleActive={handleActive}
         />
         <TabNavigatorItem
-          active={active}
           icon={<BiInfoCircle />}
           label="About"
           route="/about"
+          active={active === "About"}
+          handleActive={handleActive}
         />
       </ul>
     </div>
